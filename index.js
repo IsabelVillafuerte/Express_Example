@@ -6,6 +6,11 @@ app.get('/', function(req, res) {
 
 });
 
+app.post('/', function(req, res) {
+  console.log('Hola acabo de hacer un post');
+  res.send('Hola acabo de hacer un post');
+});
+
 app.get('/user', function(req, res) {
  res.send('Hola estoy haciendo usuarios');
 
