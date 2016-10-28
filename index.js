@@ -3,8 +3,8 @@ var app = express();
 
 app.use(express.static('public'));
 
-app.get('/', function(req, res) {
-  res.send('Hola mundo');
+app.get('/index.html', function(req, res) {
+  res.sendFile(--dirname + '/' + 'index.html');
 
 });
 
